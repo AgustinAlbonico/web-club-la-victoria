@@ -1,0 +1,43 @@
+.welcome {
+    background: linear-gradient(54deg, rgba(255,255,255,1) 0%, rgba(238,252,255,1) 15%, rgba(220,244,239,1) 31%, rgba(116,201,146,1) 73%);
+    display: flex;
+    justify-content: center;
+}
+
+.welcome .container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    margin-left: 12rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+}
+
+.hero-logo {
+    width: 40%;
+}
+
+.header .content h3 {
+    font-size: 8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 3rem 0;
+    color: red;
+}
+
+.hero-text h1 {
+    letter-spacing: 2px;
+    color: green;
+}
+
+.hero-text h1 b{
+    letter-spacing: 2px;
+    color: red;
+}
+
