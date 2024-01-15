@@ -1,0 +1,18 @@
+#reservas {
+  padding-top: 120px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+}
+/* 
+.items-container {
+  display: grid;
+  background-color: rebeccapurple;
+  grid-template-rows: repeat(2, 1fr);
+} */
+
+.items-container {
+  margin: auto;
+}

@@ -1,0 +1,22 @@
+.asd {
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  margin-top: 120px;
+}
+
+.img-container img {
+}
+
+.title {
+  text-align: start;
+}
+
+.title span {
+  color: red;
+}
+
+.title .secondary {
+}
