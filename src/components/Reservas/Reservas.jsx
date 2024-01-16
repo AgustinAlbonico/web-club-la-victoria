@@ -12,44 +12,32 @@ const dataItems = [
   {
     icon: FutbolIcon,
     nombre: 'Cancha de futbol 5',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha paddel alfombra',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    nombre: 'Cancha padel alfombra',
+    descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha de paddel cemento',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    nombre: 'Cancha de padel cemento',
+    descripcion: '',
   },
   {
     icon: TennisIcon,
     nombre: 'Cancha de tenis',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    descripcion: '',
   },
   {
     icon: HomeIcon,
     nombre: 'Salon',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    descripcion: '',
   },
   {
     icon: HomeIcon,
     nombre: 'Quincho',
-    descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.',
-    link: 'https://www.facebook.com',
+    descripcion: '',
   },
 ]
 
@@ -67,10 +55,7 @@ export const Reservas = (props) => {
       <div className='container'>
         <div className='section-title reservas-title'>
           <h2>Reservas</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
+          <p>Realiza tu reserva en cualquiera de nuestros espacios!</p>
         </div>
         <div className='row items-container'>
           {dataItems.map((item) => {
@@ -79,7 +64,6 @@ export const Reservas = (props) => {
                 icon={item.icon}
                 nombre={item.nombre}
                 descripcion={item.descripcion}
-                link={item.link}
                 changeLink={changeLink}
                 setIsOpen={setIsOpen}
               />

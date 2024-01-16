@@ -1,5 +1,5 @@
-import React from 'react';
-import './reservaItem.css';
+import React from 'react'
+import './reservaItem.css'
 
 const ReservaItem = ({
   icon,
@@ -10,9 +10,9 @@ const ReservaItem = ({
   setIsOpen,
 }) => {
   const handleClick = () => {
-    changeLink(link);
-    setIsOpen(true);
-  };
+    changeLink(link)
+    setIsOpen(true)
+  }
 
   return (
     // <div className='reservaItem-container'>
@@ -29,13 +29,13 @@ const ReservaItem = ({
       </div>
       <div className='item-desc'>
         <h3>{nombre}</h3>
-        <p>{descripcion}</p>
-        <button className='btn btn-custom btn-lg' onClick={() => handleClick()}>
+        {/* <p>{descripcion}</p> */}
+        <button className='btn btn-custom btn-lg' onClick={handleClick}>
           Reservar
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ReservaItem;
+export default ReservaItem

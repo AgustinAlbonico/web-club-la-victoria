@@ -46,7 +46,8 @@
 }
 
 .joinchat__button:hover {
-  background-color: red;
-  opacity: 0.7;
-  transition: all ease-in 0.3s;
+  transform: scale(1.1);
+  opacity: 0.9;
+  filter: brightness(105%);
+  transition: all ease-in-out 0.3s;
 }

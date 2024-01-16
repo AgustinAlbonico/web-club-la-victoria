@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import emailjs from 'emailjs-com'
-import React from 'react'
+import { toast } from 'react-toastify'
 
 const initialState = {
   name: '',
@@ -38,8 +38,13 @@ export const Contact = (props) => {
           }
         )
         .then(() => {
-          window.alert('Email enviado con exito!')
-          window.location.reload()
+          setTimeout(() => {
+            window.location.reload()
+          }, 1500)
+          toast.success('Mensaje enviado!', {
+            position: 'top-center',
+            autoClose: 1500,
+          })
         })
     )
   }

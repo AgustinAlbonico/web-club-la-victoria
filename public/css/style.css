@@ -78,8 +78,9 @@ hr {
   padding: 12.5px 25px;
   transition: all 0.8s;
 }
-#menu.navbar-default {
-  background-color: #fff;
+.navbar-background {
+  color: black !important;
+  background-color: #fff !important;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -148,9 +149,6 @@ hr {
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
-}
-.section-title {
-  margin-bottom: 70px;
 }
 .reservas-title {
   margin-bottom: 20px;
@@ -282,8 +280,11 @@ header .intro-text {
 }
 /* About Section */
 #about {
-  padding: 120px 0;
-  height: 100vh;
+  padding: 100px 0;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+  align-items: center;
 }
 #about h3 {
   font-size: 22px;
@@ -366,7 +367,7 @@ header .intro-text {
 }
 #reservas h3 {
   font-weight: 500;
-  padding: 5px 0;
+  margin: 20px 0;
   color: #fff;
 }
 #reservas p {
@@ -375,6 +376,7 @@ header .intro-text {
 #reservas .item-desc {
   margin-bottom: 40px;
 }
+
 #reservas .item-desc p {
   margin-bottom: 15px;
 }
@@ -491,9 +493,7 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);
 }
-#contact .section-title {
-  margin-bottom: 40px;
-}
+
 #contact .section-title p {
   font-size: 16px;
 }
@@ -544,7 +544,7 @@ label {
 #contact .form-control {
   display: block;
   width: 100%;
-  padding: 8px 12px;
+  padding: 18px 12px;
   font-size: 16px;
   line-height: 1.42857143;
   color: #444;
@@ -632,11 +632,30 @@ label {
   gap: 0px 48px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 50px;
+  align-items: center;
 }
 
 .mapa {
   border-radius: 4px;
   width: 600;
+}
+
+.about-container {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto !important;
+}
+
+.carousel {
+  z-index: '99';
+  position: 'block';
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-foto {
+  border-radius: 5px;
 }
 
 @media (max-width: 991px) {
@@ -672,6 +691,13 @@ label {
   .mapa {
     width: 100%;
   }
+
+  .border-top {
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    opacity: 40%;
+  }
 }
 
 @media (max-width: 762px) {
@@ -679,15 +705,41 @@ label {
     flex-direction: column;
   }
 
+  .home-text-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .img-container {
-    margin-top: 0;
-    margin-bottom: 15px;
+    display: flex !important;
+    align-items: center !important;
+    margin: 80px 0 !important;
+  }
+
+  .img-container img {
+    height: 350px;
   }
 
   header .intro-text {
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 0;
     text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  #about {
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .about-container {
+    margin: 0 !important;
   }
 
   .reserva-item-container {
@@ -697,11 +749,17 @@ label {
     align-items: center;
   }
 
-  .border-top {
-    height: 1px;
-    width: 90%;
-    background-color: white;
-    opacity: 40%;
+  .reserva-item-container .img-container {
+    margin: 40px 0 0 0 !important;
+  }
+
+  .carousel {
+    height: 280px;
+  }
+
+  .carousel-foto {
+    height: 280px;
+    width: auto;
   }
 }
 
@@ -724,17 +782,6 @@ label {
 
 .logo-container img {
   height: 60px;
-}
-
-.about-container {
-  width: 80%;
-}
-
-.slide-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
 }
 
 .slide-container img {
