@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Logo from '../../img/logo.png'
-import { motion } from 'framer-motion'
 
 export const Navigation = (props) => {
   const [close, setClose] = useState(false)

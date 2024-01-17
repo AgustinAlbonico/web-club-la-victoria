@@ -29,7 +29,7 @@ const ReservaItem = ({
       </div>
       <div className='item-desc'>
         <h3>{nombre}</h3>
-        {/* <p>{descripcion}</p> */}
+        {descripcion && <p>{descripcion}</p>}
         <button className='btn btn-custom btn-lg' onClick={handleClick}>
           Reservar
         </button>

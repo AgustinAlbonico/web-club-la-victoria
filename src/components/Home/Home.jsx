@@ -14,7 +14,7 @@ export const Home = (props) => {
                   <span>La Victoria</span>
                 </h1>
                 <div className='home-text-container'>
-                  <p>Club de caza y pesca La Victoria</p>
+                  <p>Servicio de alquiler de canchas y salones.</p>
                 </div>
 
                 <div className='btn-container'>

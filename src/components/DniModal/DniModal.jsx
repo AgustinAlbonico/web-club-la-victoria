@@ -21,6 +21,7 @@ const DniModal = ({ isOpen, setIsOpen }) => {
   //const [isOpen, setIsOpen] = useState(true);
   const [dni, setDni] = useState('')
   const [error, setError] = useState('')
+  const [isDisabled, setIsDisabled] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -30,6 +31,7 @@ const DniModal = ({ isOpen, setIsOpen }) => {
     }
     if (dnis.documentos.find((item) => item === dni)) {
       setError('')
+      setIsDisabled(true)
       setTimeout(() => {
         window.location.href =
           'https://turnosconqr.com/club_la_victoria-prueba1'
@@ -39,7 +41,7 @@ const DniModal = ({ isOpen, setIsOpen }) => {
         autoclose: 1500,
       })
     } else {
-      return setError('Para asociarse al club, comunicarse con secretaria')
+      return setError('Para asociarte comunicate con la Secretaría del Club.')
     }
   }
 
@@ -57,16 +59,24 @@ const DniModal = ({ isOpen, setIsOpen }) => {
             <RxCross1 size={24} />
           </div>
         </div>
-        <p>Para poder realizar una reserva se debe ser socio del club.</p>
+        <p>
+          Solo podrán realizar una reserva los socios que estén al día con su
+          cuota.
+        </p>
         <form onSubmit={(e) => handleSubmit(e)} className='modal-form'>
           <input
             type='text'
             name='dni'
             placeholder='Documento (Sin puntos)'
             onChange={(e) => setDni(e.target.value)}
+            disabled={isDisabled}
           />
           {error.length > 0 && <p className='error'>{error}</p>}
-          <button type='submit' className='btn'>
+          <button
+            type='submit'
+            className={`btn btn-custom btn-lg ${isDisabled && 'disabled'}`}
+            disabled={isDisabled}
+          >
             Ingresar
           </button>
         </form>

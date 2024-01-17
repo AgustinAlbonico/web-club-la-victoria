@@ -11,17 +11,17 @@ import HomeIcon from '../../img/home.png'
 const dataItems = [
   {
     icon: FutbolIcon,
-    nombre: 'Cancha de futbol 5',
+    nombre: 'Cancha de fútbol 5',
     descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha padel alfombra',
+    nombre: 'Cancha pádel alfombra',
     descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha de padel cemento',
+    nombre: 'Cancha de pádel cemento',
     descripcion: '',
   },
   {
@@ -31,13 +31,14 @@ const dataItems = [
   },
   {
     icon: HomeIcon,
-    nombre: 'Salon',
+    nombre: 'Salón',
     descripcion: '',
   },
   {
     icon: HomeIcon,
     nombre: 'Quincho',
-    descripcion: '',
+    descripcion:
+      'En caso de solicitar este servicio para Casamientos o Cumpleaños de Quince, comunicarse previamente con la Secretaría del Club.',
   },
 ]
 
@@ -55,7 +56,10 @@ export const Reservas = (props) => {
       <div className='container'>
         <div className='section-title reservas-title'>
           <h2>Reservas</h2>
-          <p>Realiza tu reserva en cualquiera de nuestros espacios!</p>
+          <p>
+            Seleccioná actividad, día y hora. Una vez abonada, deberás adjuntar
+            el comprobante del pago en el apartado "Mis reservas".
+          </p>
         </div>
         <div className='row items-container'>
           {dataItems.map((item) => {

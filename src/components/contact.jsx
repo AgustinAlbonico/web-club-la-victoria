@@ -52,7 +52,7 @@ export const Contact = (props) => {
   return (
     <div>
       <div id='contact'>
-        <div className='container'>
+        <div className='container contact-container'>
           <div className='contenedor'>
             <div className='col-md-8'>
               <div className='row'>
@@ -136,12 +136,20 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
+                    <a
+                      href={props.data ? props.data.facebook : '/'}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       <i className='fa fa-facebook'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.instagram : '/'}>
+                    <a
+                      href={props.data ? props.data.instagram : '/'}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
                       <i className='fa fa-instagram'></i>
                     </a>
                   </li>

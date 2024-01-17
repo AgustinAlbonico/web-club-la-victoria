@@ -52,4 +52,14 @@
 }
 
 .modal-form button:hover {
+  color: white;
+  background-color: rgb(219, 219, 219);
+  transition: 0.3s all;
+}
+
+.disabled {
+  border: 1px black solid;
+  color: white;
+  background-color: red;
+  cursor: crosshair;
 }
