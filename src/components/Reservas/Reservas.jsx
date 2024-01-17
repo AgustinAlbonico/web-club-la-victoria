@@ -67,6 +67,7 @@ export const Reservas = (props) => {
           {dataItems.map((item) => {
             return (
               <ReservaItem
+                key={item.nombre}
                 icon={item.icon}
                 nombre={item.nombre}
                 descripcion={item.descripcion}
