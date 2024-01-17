@@ -32,7 +32,8 @@ const dataItems = [
   {
     icon: HomeIcon,
     nombre: 'Salón',
-    descripcion: '',
+    descripcion:
+      'En caso de solicitar este servicio para Casamientos o Cumpleaños de Quince, comunicarse previamente con la Secretaría del Club.',
   },
   {
     icon: HomeIcon,
@@ -58,7 +59,8 @@ export const Reservas = (props) => {
           <h2>Reservas</h2>
           <p>
             Seleccioná actividad, día y hora. Una vez abonada, deberás adjuntar
-            el comprobante del pago en el apartado "Mis reservas".
+            el comprobante del pago en el apartado "Mis reservas". Tendrás 30
+            minutos para hacerlo.
           </p>
         </div>
         <div className='row items-container'>

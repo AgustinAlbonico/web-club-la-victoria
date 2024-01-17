@@ -4,18 +4,6 @@ import Logo from '../../img/logo.png'
 export const Navigation = (props) => {
   const [close, setClose] = useState(false)
 
-  // const [isScrolling, setIsScrolling] = useState(false);
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', () => {
-  //     if (window.scrollY >= 80) {
-  //       setIsScrolling(true);
-  //     } else {
-  //       setIsScrolling(false);
-  //     }
-  //   });
-  // }, []);
-
   const handleItemClick = () => {
     setClose(true)
   }
