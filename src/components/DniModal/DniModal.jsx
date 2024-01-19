@@ -54,6 +54,7 @@ const DniModal = ({ isOpen, setIsOpen }) => {
             className='close-container'
             onClick={() => {
               setIsOpen(false)
+              setError('')
             }}
           >
             <RxCross1 size={24} />
@@ -63,6 +64,9 @@ const DniModal = ({ isOpen, setIsOpen }) => {
           Solo podrán realizar una reserva los socios que estén al día con su
           cuota.
         </p>
+        <a href='https://youtu.be/TpRkhCNhCDQ' target='_blank' rel='noreferrer'>
+          Cómo reservar?
+        </a>
         <form onSubmit={(e) => handleSubmit(e)} className='modal-form'>
           <input
             type='text'

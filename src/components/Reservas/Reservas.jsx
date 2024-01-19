@@ -11,22 +11,22 @@ import HomeIcon from '../../img/home.png'
 const dataItems = [
   {
     icon: FutbolIcon,
-    nombre: 'Cancha de fútbol 5',
+    nombre: 'Cancha fútbol 5',
     descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha pádel alfombra',
+    nombre: 'Pádel sobre alfombra',
     descripcion: '',
   },
   {
     icon: PaddleIcon,
-    nombre: 'Cancha de pádel cemento',
+    nombre: 'Pádel sobre cemento',
     descripcion: '',
   },
   {
     icon: TennisIcon,
-    nombre: 'Cancha de tenis',
+    nombre: 'Tenis sobre polvo de ladrillo',
     descripcion: '',
   },
   {

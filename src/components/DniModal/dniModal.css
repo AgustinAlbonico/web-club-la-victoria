@@ -63,3 +63,12 @@
   background-color: red;
   cursor: crosshair;
 }
+
+.modal-container p {
+  margin-bottom: 0 !important;
+}
+
+.modal-container a {
+  margin: 2px 0;
+  font-size: medium;
+}
