@@ -27,7 +27,7 @@ export const Carousel = () => {
           src={Foto1}
           alt=''
           className='carousel-foto'
-          height={350}
+          height={400}
           style={{ objectFit: 'cover', margin: '0 auto' }}
         />
       </SwiperSlide>
@@ -36,7 +36,7 @@ export const Carousel = () => {
           src={Foto2}
           alt=''
           className='carousel-foto'
-          height={350}
+          height={400}
           style={{ objectFit: 'cover', margin: '0 auto' }}
         />
       </SwiperSlide>
@@ -45,7 +45,7 @@ export const Carousel = () => {
           src={Foto3}
           alt=''
           className='carousel-foto'
-          height={350}
+          height={400}
           style={{ objectFit: 'cover', margin: '0 auto' }}
         />
       </SwiperSlide>
@@ -54,7 +54,7 @@ export const Carousel = () => {
           src={Foto4}
           alt=''
           className='carousel-foto'
-          height={350}
+          height={400}
           style={{ objectFit: 'cover', margin: '0 auto' }}
         />
       </SwiperSlide>
@@ -63,7 +63,7 @@ export const Carousel = () => {
           src={Foto5}
           alt=''
           className='carousel-foto'
-          height={350}
+          height={400}
           style={{ objectFit: 'cover', margin: '0 auto' }}
         />
       </SwiperSlide>
